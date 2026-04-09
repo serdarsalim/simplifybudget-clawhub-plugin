@@ -2,7 +2,7 @@
   "id": "simplify-budget",
   "name": "Simplify Budget",
   "description": "Personal budget tracker on top of a Google Sheets template",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "configSchema": {
     "type": "object",
     "additionalProperties": false,
