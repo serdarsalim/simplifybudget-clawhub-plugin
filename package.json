@@ -1,0 +1,17 @@
+{
+  "name": "simplifybudget-clawhub-plugin",
+  "version": "1.2.0",
+  "description": "Simplify Budget OpenClaw plugin",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.4.5"
+    },
+    "build": {
+      "openclawVersion": "2026.4.5"
+    }
+  }
+}
