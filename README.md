@@ -31,6 +31,24 @@ This package contains:
 - `scripts/`: bundled budget scripts used by the plugin
 - `CONVERSATION_WORKFLOW.md`: conversation-layer reference
 
+## Required Configuration
+
+This plugin requires:
+- `GOOGLE_SA_FILE`
+- `SPREADSHEET_ID`
+- `TRACKER_CURRENCY`
+
+Optional:
+- `TRACKER_CURRENCY_SYMBOL`
+
+These values must point at a user-owned Google service account key and a user-owned copy of the Simplify Budget sheet template.
+
+## Security Scope
+
+- The plugin talks to `sheets.googleapis.com` using the configured Google service account.
+- It does not need or ship any session-pruning or agent-state migration tooling as part of the published plugin bundle.
+- The Google service account should be scoped to Sheets access and shared only with the intended budget sheet.
+
 ## Install Summary
 
 1. Copy the Google Sheet template.
